@@ -1,4 +1,4 @@
-# Cockpit TherapScoreRulesWidget
+# Cockpit WorkshopWidget
 
 For a functional description of this Widget, please visit:
 
@@ -55,7 +55,7 @@ choco install make
 Clone the repo either with
 
 ```
-git clone git@bitbucket.org:glintt_sws/therap-score-rules-widget.git
+git clone git@bitbucket.org:glintt_sws/workshop-widget.git
 ```
 
 or
@@ -165,7 +165,7 @@ A static build will be generated to /build and can be deployed anywhere.
 
 ````
 {
-    "name": "therap-score-rules-widget",
+    "name": "workshop-widget",
     "version": "0.1.0",
     "private": true,
     "dependencies": {

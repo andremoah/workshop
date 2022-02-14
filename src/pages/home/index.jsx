@@ -26,7 +26,7 @@ const Home = () => {
                 }
             }}
         >
-            <div>Add Your Code Here</div>
+            <div style={{ color: 'white' }}>Add Your Code Here</div>
         </Layout>
     )
 }

@@ -5,10 +5,10 @@ import ReactDOM from 'react-dom'
 import manifest from '../public/manifest.json'
 
 const Widget = () => (
-    <DevelopmentWidget appName={'therap-score-rules-widget'} manifest={manifest}>
+    <DevelopmentWidget appName={'workshop-widget'} manifest={manifest}>
         <App
             middleware={'https://cockpit-swarm-gateway.glinttlab.com/middleware-boilerplate/'}
-            appName="therap-score-rules-widget"
+            appName="workshop-widget"
         />
     </DevelopmentWidget>
 )
