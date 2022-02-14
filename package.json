@@ -1,0 +1,52 @@
+{
+    "name": "therap-score-rules-widget",
+    "version": "1.3.1",
+    "private": true,
+    "scripts": {
+        "bootstrap": "func () { make -B bootstrap \"arg=$*\" ;}; func",
+        "build": "func () { make -B build \"arg=$*\" ;}; func",
+        "changelog": "make changelog",
+        "commit": "make git-commit",
+        "dev": "make prepare-docker",
+        "dev:build": "make prepare-docker-build",
+        "dev:local": "func () { make -B prepare-local \"arg=$*\" ;}; func",
+        "postinstall": "patch-package",
+        "prod": "func () { make -B prepare-production \"arg=$*\" ;}; func",
+        "test": "func () { make -B test \"arg=$*\" ;}; func",
+        "test:e2e": "func () { make -B test-e2e \"arg=$*\" ;}; func",
+        "test:export": "func () { make -B test-export \"arg=$*\" ;}; func",
+        "test:trace": "func () { make -B test-trace \"arg=$*\" ;}; func",
+        "test:unit": "func () { make -B test-unit-silent \"arg=$*\" ;}; func",
+        "test:upload": "func () { make -B test-upload \"arg=$*\" ;}; func",
+        "update": "func () { make -B update \"arg=$*\" ;}; func"
+    },
+    "config": {
+        "commitizen": {
+            "path": "node_modules/@cockpit/git/conventional-commits"
+        }
+    },
+    "resolutions": {
+        "colors": "1.4.0"
+    },
+    "dependencies": {
+        "@cockpit/colors": "^2.9.0",
+        "@cockpit/empty": "^2.9.0",
+        "@cockpit/error": "^2.10.0",
+        "@cockpit/frontend": "*",
+        "@cockpit/history-data-template": "^0.10.2",
+        "@cockpit/i18n": "*",
+        "@cockpit/layout": "^0.11.0",
+        "@cockpit/space": "^2.6.0",
+        "@cockpit/table": "^2.16.2",
+        "@cockpit/typography": "^3.5.0",
+        "fireworks-js": "^1.3.5",
+        "prop-types": "^15.8.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "react-is": "^17.0.2"
+    },
+    "devDependencies": {
+        "@cockpit/git": "*",
+        "patch-package": "^6.4.7"
+    }
+}

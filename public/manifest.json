@@ -1,0 +1,10 @@
+{
+    "contexts": [
+        {
+            "id": "default",
+            "roleCode": "",
+            "specialtyCode": ""
+        }
+    ],
+    "sizes": ["S", "M", "L", "XL"]
+}

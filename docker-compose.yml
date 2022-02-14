@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+    therap-score-rules-widget:
+        image: therap-score-rules-widget
+        build:
+            context: .
+            dockerfile: ./dockerfile.dev
+        volumes:
+            - ./:/opt/cockpit/:delegated
+            - /opt/cockpit/node_modules/
+        ports:
+            - "3000:3000"
+        command: sh -c 'make entrypoint-build-docker'

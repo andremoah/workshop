@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "jsx": "react",
+        "baseUrl": "./src",
+        "paths": {
+            "*": ["./*"]
+        }
+    },
+    "exclude": ["node_modules", "build"],
+	"confluenceKey": "123456",
+	"testPlanKey": "",
+    "typeAcquisition": { "include": ["jest"] }
+}

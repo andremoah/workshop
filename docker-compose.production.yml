@@ -1,0 +1,13 @@
+version: "3"
+
+volumes:
+    yarn:
+
+services:
+    therap-score-rules-widget-prod:
+        image: therap-score-rules-widget-prod
+        build:
+            context: .
+            dockerfile: ./dockerfile.prod
+        ports:
+            - "${PORT:-3001}:80"
